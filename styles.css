@@ -1,0 +1,436 @@
+/* Basic styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255); /* White background */
+    color: #333;
+}
+
+/* Top navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #c64040; /* Soft red background */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .app-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f1c40f; /* Bright yellow on hover */
+}
+
+/* Main content container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 110px); /* Adjust height for navbar */
+}
+
+/* App title */
+.app-title-large {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #0078d4;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* App subtitle */
+.app-subtitle {
+    text-align: center;
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.4em;
+}
+
+/* Download section styles */
+.download-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.download-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Scrollable download options */
+.download-options {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Button styles */
+.btn {
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Platform-specific button colors */
+.btn-windows {
+    background-color: #c95346;
+}
+
+.btn-mac {
+    background-color: #6978d5;
+}
+
+/* Video container */
+.video-container {
+    text-align: center;
+    margin: 60px 0;
+    width: 70%;
+}
+
+
+video, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.floating-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    text-align: center;
+    animation: fade-in-out 3s ease-in-out forwards;
+}
+
+
+.infographic-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    animation: slide-in 0.5s ease-out forwards;
+}
+
+
+.infographic-container h2 {
+    font-size: 1.9em;
+    color: #da5c43; 
+    margin-bottom: 10px;
+}
+
+
+.infographic-container p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.btn-close {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close:hover {
+    background-color: #555;
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.welcome-section {
+    background: linear-gradient(185deg, #c64040, #c23c3c); 
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 70%;
+    max-width: 980px;
+    margin: 40px auto;
+    transform: translateY(5px); /* Slight upward movement for depth */
+    animation: fadeInUp 1.9s ease-in-out;
+}
+
+.welcome-content h1 {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+
+.welcome-content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.welcome-content strong {
+    color: #f1c40f; 
+    font-weight: bold;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.contact-item .facebook-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.facebook-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff; /* Card style */
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Adjust width */
+}
+
+.facebook-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+.facebook-profile img {
+    width: 60px; /* Profile image size */
+    height: 60px;
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover;
+    border: 2px solid #c64040; /* Accent border */
+}
+
+.facebook-profile a {
+    font-size: 1.2em;
+    color: #0078d4; /* Link color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.facebook-profile a:hover {
+    color: #f1c40f; /* Yellow hover effect */
+}
+
+
+.contact-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #d12e2e;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrap for small screens */
+}
+
+.contact-info .contact-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info .contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    color: #c64040;
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-item a:hover {
+    color: #f1c40f; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    
+}
+#gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.40);
+}
