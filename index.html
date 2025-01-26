@@ -3,82 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiCore: Blood Spatter Analysis Detection</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
 </head>
 <body>
+    <div id="tabs">
+        <div class="tab" onclick="showTab('home')">Home</div>
+        <div class="tab" onclick="showTab('about')">About</div>
+        <div class="tab" onclick="showTab('features')">Features</div>
+        <div class="tab" onclick="showTab('contacts')">Contacts</div>
+    </div>
 
-<!-- Top navigation -->
-<div class="navbar">
-    <div class="nav-links">
-        <a href="#home">AiCore</a>
-        <a href="#home">Home</a>
-        <a href="#faq">FAQ</a>
-    </div>
-</div>
+    <div id="tab-contents">
+        <div id="home" class="tab-content active">
+            <H1>AiCORE:</H1>
+            <h2>A COMPUTER VISION AND 3D SIMULATION TOOLSET
 
-<!-- Main content -->
-<div class="container">
-    <!-- App Name -->
-    <h1 class="app-title">AiCore: Blood Spatter Analysis Detection Using Artificial Intelligence (AI), Augmented Reality (AR), and Computer Vision (CV)</h1>
-    
-    <!-- Download section -->
-    <div class="download-section">
-        <h1 class="download-title">DOWNLOAD</h1>
-        
-        <!-- Scrollable platform options -->
-        <div class="download-options">
-            <button class="btn btn-windows" id="downloadWindows">Download for Windows</button>
-            <button class="btn btn-mac" id="downloadMac">Download for Mac</button>
-        </div>
-    </div>
-    <section id="gallery">
-        <h2>Image Gallery</h2>
-        <div class="gallery">
-            <img src="passive.png" alt="Description of Image 1">
-            <img src="Arterial Spurt.jpg" alt="Description of Image 2">
-            <img src="satellite stains.jpg" alt="Description of Image 3">
-            <img src="Splash Pattern.jpg" alt="Description of Image 4">
-            <img src="Blood Pool.jpg" alt="Description of Image 3">
-            <img src="Drip Pattern.jpg" alt="Description of Image 4">
-        </div>
-    </section>
-    <!-- Local Video Section -->
-    <div class="video-container">
-        <h2>Watch Our Demo</h2>
-        <video controls autoplay loop width="100%">
-            <source src="AiCore_ By Flores Hans And Reburiano Augnina.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="contact-item">
-        <h3>Facebook</h3>
-        <div class="facebook-profiles">
-            <!-- Profile 1 -->
-            <div class="facebook-profile">
-                <img src="hans.jpg" alt="Hans Harold Flores Profile Picture">
-                <a href="https://www.facebook.com/hansunleee" target="_blank">FLORES, Hans Harold</a>
+                FOR BLOODSTAIN PATTERN ANALYSIS AND
+                CRIME SCENE RECONSTRUCTION
+            </h2>
+            <div class="image-container">
+                <img src="home display.jpg" alt="Home Image" class="home-image">
+                <img src="creative sync logo.png" alt="logo"class="creative-sync">
+                <img src="aicore logo.png" alt="logo"class="aicore">
             </div>
-            <!-- Profile 2 -->
-            <div class="facebook-profile">
-                <img src="nina.jpg" alt="Augnina Krizel Reburiano Profile Picture">
-                <a href="https://www.facebook.com/Augninaa/" target="_blank">REBURIANO, Augnina Krizel</a>
+
+            <div>
+                <a href="path/to/windows/file.exe" download="windows-file.exe">
+                    <button class="download-btn windows-btn">Download for Windows</button>
+                </a>
+            </div>
+
+            <div>
+                <a href="path/to/ios/file.ipa" download="ios-file.ipa">
+                    <button class="download-btn ios-btn">Download for iOS</button>
+                </a>
             </div>
         </div>
-    </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script src="script.js"></script> <!-- Link to external JS -->
-
-<!-- Creative Welcome Section -->
-<section class="welcome-section">
-    <div class="welcome-content">
-        <h1>Welcome to AiCore</h1>
-        <p>AiCore is a cutting-edge application that combines <strong>Computer Vision (CV)</strong> and <strong>Augmented Reality (AR)</strong> to revolutionize Blood Spatter Analysis for Forensic Science Professionals. We help automate and simulate complex processes to bring new levels of accuracy and efficiency.</p>
+        <div id="about" class="tab-content">Learn more About us here.</div>
+        <div id="features" class="tab-content">Explore our Features here.</div>
+        <div id="contacts" class="tab-content">Get in touch on the Contacts page.</div>
     </div>
-</section>
 
+    <script src="script.js"></script>
 </body>
 </html>
