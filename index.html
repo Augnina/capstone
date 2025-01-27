@@ -9,41 +9,147 @@
 <body>
     <div id="tabs">
         <div class="tab" onclick="showTab('home')">Home</div>
-        <div class="tab" onclick="showTab('about')">About</div>
         <div class="tab" onclick="showTab('features')">Features</div>
         <div class="tab" onclick="showTab('contacts')">Contacts</div>
     </div>
-
     <div id="tab-contents">
         <div id="home" class="tab-content active">
             <H1>AiCORE:</H1>
-            <h2>A COMPUTER VISION AND 3D SIMULATION TOOLSET
-
-                FOR BLOODSTAIN PATTERN ANALYSIS AND
-                CRIME SCENE RECONSTRUCTION
+            <h2>A COMPUTER VISION AND 3D SIMULATION TOOLSET FOR BLOODSTAIN PATTERN ANALYSIS AND CRIME SCENE RECONSTRUCTION
             </h2>
             <div class="image-container">
                 <img src="home display.jpg" alt="Home Image" class="home-image">
                 <img src="creative sync logo.png" alt="logo"class="creative-sync">
                 <img src="aicore logo.png" alt="logo"class="aicore">
             </div>
-
+            <div>
+            </div>
             <div>
                 <a href="path/to/windows/file.exe" download="windows-file.exe">
                     <button class="download-btn windows-btn">Download for Windows</button>
                 </a>
-            </div>
-
-            <div>
+                <video class="video" controls>
+                    <source src="AiCore： By Flores Hans And Reburiano Augnina.mp4" type="video/mp4">
+                </video>
                 <a href="path/to/ios/file.ipa" download="ios-file.ipa">
                     <button class="download-btn ios-btn">Download for iOS</button>
                 </a>
             </div>
         </div>
 
-        <div id="about" class="tab-content">Learn more About us here.</div>
-        <div id="features" class="tab-content">Explore our Features here.</div>
-        <div id="contacts" class="tab-content">Get in touch on the Contacts page.</div>
+
+
+
+
+
+
+    <div class="main">
+        <div id="features" class="tab-content">
+            <div class="carousel-container">
+                <div class="carousel">
+                    
+                    <div class="carousel-item">
+                        <img src="w.jpg" alt="Image 1">
+                        <div class="text-overlay">ENABLES USER TO VIEW AND INTERACT WITH CRIME SCENES IN THREE DIMENSION
+                        </div>
+                    </div>
+        
+                    
+                    <div class="carousel-item">
+                        <img src="o.jpg" alt="Image 2">
+                        <div class="text-overlay">PROVIDES PRECISE MEASUREMENTS FOR CRIME SCENE RECONSTRUCTION</div>
+                    </div>
+        
+ 
+                    <div class="carousel-item">
+                        <img src="n.jpg" alt="Image 3">
+                        <div class="text-overlay">IDENTIFIES AND ISOLATES BLOOD SPATTERS AND KEY EVIDENCE FOR FOCUSED ANALYSIS</div>
+                    </div>
+        
+
+                    <div class="carousel-item">
+                        <img src="k.jpg" alt="Image 4">
+                        <div class="text-overlay">COMPUTES IMPACT ANGLES, CONVERGENCE POINTS, AND POINTS OF ORIGIN</div>
+                    </div>
+        
+
+                    <div class="carousel-item">
+                        <img src="i.jpg" alt="Image 5">
+                        <div class="text-overlay">SIMULATES MOTION, GRAVITY, AND FORCES TO RECREATE EVENTS</div>
+                    </div>
+                </div>
+        
+
+                <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+        
+                <!-- Navigation Dots -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+    </div>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+        <div id="contacts" class="tab-content"> 
+            <section class="contact-section">
+                <div class="contact-header">
+                    
+                    <p>Get in touch with us! We're here to help.</p>
+                </div>
+        
+                <div class="contact-info">
+                    <!-- Contact for Person 1 -->
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <img src="image.png" alt="Hans Harold Flores">
+                            <p>Hans Harold Flores</p>
+                            <h2>Hans Harold Flores</h2>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Phone:</strong>09544219191</p>
+                            <p><strong>Email:</strong> floreshansharoldlee@gmail.com</p>
+                            <a href="https://www.facebook.com/hansunleee/" target="_blank" class="facebook-link">
+                                <img src="image copy.png" alt="Facebook" class="social-icon"> Facebook
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Contact for Person 2 -->
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <img src="profile-2-1.jpg" alt="Augnina Krizel Reburiano">
+                            <p>Augnina Krizel Reburiano</p>
+                            <h2>Person 2</h2>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Phone:</strong>09682712483</p>
+                            <p><strong>Email:</strong> person2@example.com</p>
+                            <a href="https://www.facebook.com/augnina.krizel.reburiano" target="_blank" class="facebook-link">
+                                <img src="image copy.png" alt="Facebook" class="social-icon"> Facebook
+                            </a>
+                            </div>
+                        </div>
+                        <img src="creative sync logo.png" alt="logo"class="creative-sync">
+                        <img src="aicore logo.png" alt="logo"class="aicore">
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <script src="script.js"></script>
