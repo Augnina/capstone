@@ -1,8 +1,20 @@
+/* Video Background */
+#video-background {
+    position: fixed; /* Keep the video fixed in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video take up the full width */
+    height: 100%; /* Make the video take up the full height */
+    object-fit: cover; /* Ensure the video covers the entire screen without distorting */
+    z-index: -1; /* Place the video behind other content */
+    filter: blur(8px); /* Apply a blur effect */
+    -webkit-filter: blur(8px); /* Ensure the blur works in Safari */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
     color: #fff;
 }
 
@@ -11,7 +23,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-bottom: none;
-    background-color: #000000;
+
 }
 
 .tab.active {
@@ -22,7 +34,7 @@ body {
 .tab-content {
     display: none;
     padding: 20px;
-    background-color: #000000;
+
 }
 
 .tab-content.active {
@@ -40,6 +52,7 @@ body {
 
 h1{
     font-size: 100px;
+    text-shadow: #2d4373;
 }
 h2 {
     font-family: 'Courier New', Courier, monospace;
@@ -230,7 +243,7 @@ h2 {
     max-width: 1200px;
     margin: 30px auto;
     padding: 10px;
-    background-color: #000000;
+    box-shadow: h-offset v-offset blur spread color;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -242,6 +255,7 @@ h2 {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .contact-header p {
@@ -249,6 +263,7 @@ h2 {
     color: #C83F61;
     margin-bottom: 35px;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Card Styling */
@@ -263,7 +278,6 @@ h2 {
     margin-top: 5px;
 }
 .contact-card {
-    background-color: #000000;
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -279,7 +293,7 @@ h2 {
 .card-header {
     position: relative;
     background-color: #C83F61;
-    color: #000000;
+
     padding: 10px;
     text-align: center;
     font-size: 20px;
