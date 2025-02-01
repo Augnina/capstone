@@ -26,41 +26,28 @@ body {
 }
 
 .tab-content.active {
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 .home-image {
     width: 760px; 
     height: auto;
     border: 10px solid #ccc;
-    display: block;
-    margin: 45px auto; 
     max-width: 100%; 
-    position: relative; 
-    left: 400px; 
-    top: -10px; 
+    margin: 10px;
 }
 
-h1 {
-    position: absolute;
-    top: 10%;
-    right: 860px;       
-    transform: translateY(-50%); 
+h1{
     font-size: 100px;
-    font-family: Arial black;
 }
-
 h2 {
-    position: absolute;
-    top: 29%;         
-    right: 880px;       
-    transform: translateY(-50%); 
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace ;
-    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin-top:  -60px;
 }
-
 .download-btn {
+    margin: 10px;
     padding: 10px 10px;
     background-color: #C83F61;
     color: white;
@@ -68,17 +55,31 @@ h2 {
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
 }
 
+.logos{
+    display: flex;
+    flex-direction: row;
+}
 
+.content-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    text-align: right;
+    margin: 20px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
 .windows-btn {
     top: 565px;   
     right: 440px; 
 }
-
 
 .ios-btn {
     top: 565px;   
@@ -93,12 +94,12 @@ h2 {
     height: auto; 
     align-items: right;
     position: absolute;  
-    right:15vw;  
+    right:10vw;  
     bottom: 1vh; 
 } 
 
 .aicore {
-    width: 20vw; 
+    width: 22vw; 
     height: auto; 
     align-items: right;
     position: absolute;  
@@ -327,19 +328,13 @@ h2 {
     }
 }
 .creative-sync {
-    width: 22vw;  
+    width: 15vw;  
     height: auto; 
     align-items: right;
-    position: absolute;  
-    right:50vw;  
-    bottom: 1vh; 
 } 
 
 .aicore {
-    width: 20vw; 
+    width: 15vw; 
     height: auto; 
     align-items: right;
-    position: absolute;  
-    right: 22vw;  
-    bottom: -2vh;
 }
