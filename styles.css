@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-repeat: no-repeat;
-     background-size: cover;
-    background-image: url('bg.png');
+    background-color: #13171A ;
 }
 
 .tab {
@@ -12,13 +10,13 @@ body {
     border-bottom: none;
     color: white;
     text-decoration: solid;
-    border-bottom: 3% solid #C83F61;
+    border-bottom: 3% solid #F9415B;
     padding-bottom: 1%; 
 
 }
 
 .tab.active {
-    background-color: #C83F61;
+    background-color: #F9415B;
     font-weight: bold;
 }
 
@@ -42,76 +40,66 @@ body {
 }
 
 h1{
-    font-size: 560%;
-    color: rgb(255, 255, 255);
+    font-size: 10vh;
+    color: #F9415B;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 190%;
-    margin-top:  -8%;
-    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 180%;
+    color: #FFFFFF;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.downloadcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.textcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.downloadcontainerholder{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .download-btn {
     margin: 12px;
     padding: 10px 10px;
-    background-color: #C83F61;
+    background-color: rgba(0,0,0,0.1);
     color: white;
     font-size: 125%;
-    border: none;
+    border: solid white 1px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
-}
-
-.logos{
-    display: flex;
-    flex-direction: row;
 }
 
 .content-container{
     display: flex;
     flex-direction: column;
-    max-width: 45%;
-    text-align: right;
-    margin: 20px;
+    max-width: 60%;
+    align-items: center;
+    margin: 10% auto;
 }
 
-.image-container{
-    display: flex;
-    flex-direction: column;
+hr{
+    max-width: 100px;
+    margin: 20px 0;
 }
-.windows-btn {
-    top: 575%;   
-    right: 440%; 
-}
-
-.ios-btn {
-    top: 565%;   
-    right: 180%; 
+.banner{
+    max-width: 100%;
+    height: auto;
 }
 
 .download-btn:hover {
-    background-color: #b03e54;
-}
-.creative-sync {
-    width: 22vw;  
-    height: auto; 
-    align-items: right;
-    position: absolute;  
-    right:10vw;  
-    bottom: 1vh; 
-} 
-
-.aicore {
-    width: 22vw; 
-    height: auto; 
-    align-items: right;
-    position: absolute;  
-    right: -1vw;  
-    bottom: -2vh;
+    background-color: #F9415B;
+    scale: 1.09;
 }
 
 .carousel-container {
